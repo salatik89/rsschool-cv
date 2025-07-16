@@ -1,0 +1,157 @@
+/* Сброс и базовые настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 32px 0 16px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #2a5d9f;
+  margin-bottom: 12px;
+  border-left: 4px solid #2a5d9f;
+  padding-left: 8px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 18px;
+}
+
+ul li::before {
+  content: '•';
+  color: #2a5d9f;
+  position: absolute;
+  left: 0;
+  font-size: 1.1em;
+  top: 0;
+}
+
+a {
+  color: #2a5d9f;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover, a:focus {
+  color: #17406a;
+  text-decoration: underline;
+  outline: none;
+}
+
+pre {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+code {
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 0.98em;
+  color: #17406a;
+}
+
+:focus {
+  outline: 2px solid #2a5d9f;
+  outline-offset: 2px;
+}
+
+.profile-photo {
+  display: block;
+  margin: 0 auto 16px auto;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  object-fit: cover;
+  background: #fff;
+}
+
+.nav-sections {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 10px 0;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #2a5d9f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover, .nav-btn:focus {
+  background: #17406a;
+  color: #fff;
+  outline: 2px solid #17406a;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px 4px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+  .nav-sections {
+    gap: 6px;
+  }
+  .nav-btn {
+    font-size: 0.95rem;
+    padding: 7px 10px;
+  }
+}

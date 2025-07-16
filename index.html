@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evgenii Nalimov | CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="11200843.png" alt="Cat" class="profile-photo" width="120" height="120" tabindex="0" aria-label="Profile photo" />
+    <h1 tabindex="0" aria-label="Name: Evgenii Nalimov">Evgenii Nalimov</h1>
+    <nav class="nav-sections" aria-label="Section navigation">
+      <a href="#contacts" class="nav-btn" tabindex="0" aria-label="Go to contacts">Contacts</a>
+      <a href="#about" class="nav-btn" tabindex="0" aria-label="Go to about section">About Me</a>
+      <a href="#skills" class="nav-btn" tabindex="0" aria-label="Go to skills">Skills</a>
+      <a href="#code-example" class="nav-btn" tabindex="0" aria-label="Go to code example">Code Example</a>
+      <a href="#education" class="nav-btn" tabindex="0" aria-label="Go to education">Education</a>
+      <a href="#languages" class="nav-btn" tabindex="0" aria-label="Go to languages">Languages</a>
+    </nav>
+  </header>
+  <main>
+    <section class="contacts" id="contacts" aria-label="Contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li><a href="https://github.com/salatik89/rsschool-cv/" target="_blank" rel="noopener" aria-label="GitHub: salatik89">GitHub: salatik89</a></li>
+        <li><span aria-label="Discord: blackcat3799">Discord: blackcat3799</span></li>
+        <li><a href="mailto:salatyk23@gmail.com" aria-label="Email: salatyk23@gmail.com">Email: salatyk23@gmail.com</a></li>
+      </ul>
+    </section>
+    <section class="about" id="about" aria-label="About Me">
+      <h2>About Me</h2>
+      <p>I am 35 years old, I am studying to be an automation tester, I like doing this. That is why I want to learn JS.</p>
+    </section>
+    <section class="skills" id="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Git</li>
+        <li>Playwright (Basic)</li>
+        <li>Selenium</li>
+      </ul>
+    </section>
+    <section class="code-example" id="code-example" aria-label="Code Example">
+      <h2>Code Example</h2>
+      <pre><code tabindex="0" aria-label="TypeScript code example">export const getHrefAndTextInAtribute = async (page: Page, href: string, index: number) =&gt; {
+  const getHref = String(await page.locator(`[href^="${href}"]`).nth(index).getAttribute('href'));
+  const name = await page.locator(`[href="${getHref}"]`).innerText();
+  const url = `${getHref}`.substring(1);
+  const id = getHref.replace(`${href}", "");
+  const data = {
+    name,
+    url,
+    id,
+  };
+  return data;
+};</code></pre>
+    </section>
+    <section class="education" id="education" aria-label="Education">
+      <h2>Education</h2>
+      <ul>
+        <li><a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener" aria-label="JS / Front-end Pre-school (in progress)">JS / Front-end Pre-school (in progress)</a></li>
+      </ul>
+    </section>
+    <section class="languages" id="languages" aria-label="Languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>Russian</li>
+        <li>English: level A2</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
